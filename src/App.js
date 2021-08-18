@@ -25,6 +25,9 @@ import {BrowserRouter, Route, Switch, Redirect} from "react-router-dom";
 import TypeCheckingWithPrototypes from './TypeCheckingWithPrototypes';
 import Error from './Error';
 import RefInReact from './RefInReact';
+import HigherOrderComponent from './HigherOrderComponent';
+import UserList from './user-list';
+import './App.scss';
 
 export const MyContext = React.createContext();
 
@@ -95,6 +98,10 @@ class App extends React.Component {
          <Route component={Error} />
          </Switch>
          </BrowserRouter> */}
+         
+         <UserList />
+         <HigherOrderComponent name="prince" email="chahatkumar40@gmail.com" />
+
          
         </div>
     );
